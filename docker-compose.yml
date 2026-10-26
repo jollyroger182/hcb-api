@@ -11,7 +11,7 @@ services:
       - NODE_ENV=production
       - DATABASE_URL=/app/data/database.db
     volumes:
-      - ./data:/app/data
+      - data:/app/data
     restart: unless-stopped
 
 volumes:
