@@ -1,6 +1,10 @@
 services:
   app:
     build: .
+    deploy:
+      resources:
+        limits:
+          memory: 256M
     ports:
       - '3000:3000'
     environment:
